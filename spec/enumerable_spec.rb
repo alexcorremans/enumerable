@@ -2,21 +2,6 @@ require './enumerable'
 
 describe Enumerable do
     # test data
-=begin
-    before(:each) do
-        test_arr = [1,2,3,4,5]
-        result = []
-        test_hash = {
-            one: 1,
-            two: 2,
-            three: 3,
-            four: 4,
-            five: 5
-        }
-        result_hash = {}  
-    end
-=end
-
     let(:test_arr) { [1,2,3,4,5] }
     let(:result) { [] }
     let(:test_hash) { {
@@ -26,7 +11,6 @@ describe Enumerable do
         four: 4,
         five: 5
     } }
-    let(:result_hash) {{}}
 
     describe "#my_each" do       
         it "calls the given block for each element" do
