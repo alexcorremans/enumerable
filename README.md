@@ -6,4 +6,4 @@ The hardest method to duplicate was `#inject`, since there are so many possibili
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/courses/ruby-programming/lessons/advanced-building-blocks)
 
-RSpec tests added later as per the [Time Traveling project](https://www.theodinproject.com/courses/ruby-programming/lessons/testing-your-ruby-code)
+RSpec tests added later for some of the methods as per the [Time Traveling project](https://www.theodinproject.com/courses/ruby-programming/lessons/testing-your-ruby-code)
