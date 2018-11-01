@@ -65,7 +65,6 @@ module Enumerable
       for x in self
         if !(x == nil or x == false)
           any = true
-          puts any
           break
         end
       end
@@ -112,13 +111,13 @@ module Enumerable
   def my_map(proc=nil)
     return self.to_enum(:my_map) unless (proc or block_given?)
     array = []
-    if block_given?
+    if proc
       for x in self
-        array.push(yield(x))
+        array.push(proc.call(x))
       end
     else
       for x in self
-        array.push(proc.call(x))
+        array.push(yield(x))
       end
     end
     array
